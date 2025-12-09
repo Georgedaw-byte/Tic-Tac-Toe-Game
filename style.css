@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.square:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 20px;
+}
+
+.square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.score {
+    position: absolute;
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: rgb(210, 210, 210);
+    padding: 5px 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+}
+
+.one {
+    top: 15%;
+    left: 15%;
+}
+
+.two {
+    top: 15%;
+    right: 15%;
+}
+
+button {
+    position: absolute;
+    bottom: 30px;
+    padding: 5px;
+    width: 50px;
+    color: white;
+    background-color: black;
+}
